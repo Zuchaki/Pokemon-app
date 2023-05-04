@@ -1,0 +1,26 @@
+$type-colors: (
+    type-color-Bug:#3b9950,
+    type-color-Dark:#5a5979,
+    type-color-Dragon:#61cad9,
+    type-color-Electric:#e3e429,
+    type-color-Fairy:#ea1369,
+    type-color-Fighting:#ef6138,
+    type-color-Fire:#fd4c5a,
+    type-color-Flying:#93b2c7,
+    type-color-Ghost:#906790,
+    type-color-Grass:#1fa23f,
+    type-color-Ground:#845722,
+    type-color-Ice:#86d2f5,
+
+    type-color-Normal:#ca98a7,
+    type-color-Poison:#9b69d9,
+    type-color-Psychic:#a54a7b,
+    type-color-Rock:#8b3e21,
+    type-color-Water:#86a8fc,
+    type-color-Steel:#42bd94
+);
+:export{
+    @each $key, $value in $type-colors {
+      #{unquote($key)}: $value;
+    }
+}
