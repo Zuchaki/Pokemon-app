@@ -1,0 +1,28 @@
+@use '../../styles/Colors/colors';
+
+.container{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.message{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.back{
+    display: block;
+    width: 100px;
+    margin-top:30px;
+    text-decoration: none;
+    color: colors.$neutral-4;
+    background-color: colors.$blue-7;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition-duration: 0.2s;
+}
+.back:hover{
+    cursor: pointer;
+    background-color: colors.$blue-10;
+}

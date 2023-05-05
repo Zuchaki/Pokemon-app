@@ -3,18 +3,20 @@ import rootReducer from "./rootReducer";
 import createSagaMiddleware, { SagaMiddleware } from 'redux-saga';
 import { getPokemons } from "./Saga/getPokemons";
 import { Actions, Reducers } from "./rootReducer";
+import { getPokemonById } from "./Saga/getPokemonById";
 
 //Create the redux-saga middleware
-const SagaMiddleware: SagaMiddleware = createSagaMiddleware();
+const sagaMiddleware: SagaMiddleware = createSagaMiddleware();
 
 //Create redux store
 const store: Store<Reducers, Actions> = createStore(
     rootReducer,
-    applyMiddleware(SagaMiddleware)
+    applyMiddleware(sagaMiddleware)
 );
 
 //run sagas
-SagaMiddleware.run(getPokemons);
+sagaMiddleware.run(getPokemons);
+sagaMiddleware.run(getPokemonById);
 
 export default store;
 

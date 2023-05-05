@@ -1,4 +1,5 @@
 @use '../../styles/Elements/img';
+@use '../../styles/Colors/colors';
 
 .center{
     display: flex;
@@ -42,4 +43,15 @@
         flex-direction: column;
         width: 30%;
     }
+}
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    text-decoration: none;
+    color: colors.$neutral-9;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: italic;
 }
