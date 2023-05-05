@@ -1,0 +1,28 @@
+@use "../../../styles/Colors/colors";
+@use "../../../styles/Elements/type";
+
+.container{
+    margin-bottom: 20px;
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.parameter{
+    font-weight: 700;
+    font-size: 1rem;
+    color: colors.$neutral-9;
+}
+.value{
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+.types{
+    @extend %types;
+    justify-content: flex-start;
+
+    .type{
+        @extend %type;
+    }
+}

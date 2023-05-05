@@ -1,4 +1,7 @@
 @use "../../../styles/Colors/colors";
+@use "../../../styles/Elements/img";
+@use "../../../styles/Elements/type";
+
 .container{
     width:240px;
     height: calc(240px * 1.1618);
@@ -11,32 +14,16 @@
     border-radius: 4px;
 }
 .img{
-    margin-top:14px;
-    width: 150px;
-    height: 150px;
-    background-size: contain;
-    background-repeat: no-repeat;
+    @extend %img;
 }
 .name{
     font-size: 1.3rem;
     font-weight: 600;
 }
 .types{
-    margin-top: 10px;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @extend %types;
 
     .type{
-        border-radius: 4px;
-        font-size: 0.9rem;
-        font-weight: 600;
-        margin:0 8px 8px 8px;
-        padding: 1px 4px;
-        color:colors.$neutral-1;
-        
+        @extend %type;
     }
 }

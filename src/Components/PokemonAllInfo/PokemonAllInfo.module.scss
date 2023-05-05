@@ -1,0 +1,45 @@
+@use '../../styles/Elements/img';
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px 40px;
+}
+.name{
+    margin-top:20px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+}
+.evolutionContainer{
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.dataContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 78%;
+    margin:20px 0 0 10%;
+    .column{
+        display: flex;
+        justify-content:flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 30%;
+    }
+}

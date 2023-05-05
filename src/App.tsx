@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import MainContent from './Pages/MainContent/MainContent';
+import SinglePokemonInfo from './Pages/SinglePokemonInfo/SinglePokemonInfo';
 const content = (
   <div>
-    <MainContent/>
+    <SinglePokemonInfo/>
   </div>
 )
 

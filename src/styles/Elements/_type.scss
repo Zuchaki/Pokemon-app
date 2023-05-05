@@ -1,0 +1,20 @@
+@use "../Colors/colors";
+
+%types{
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+%type{
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin:0 8px 8px 8px;
+    padding: 1px 4px;
+    color:colors.$neutral-1;
+    
+}
