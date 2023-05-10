@@ -27,7 +27,7 @@ const Pagination:React.FC<Props> = ({page, setPage}) => {
                             <div className={style.current}>1</div>
                             <div className={style.option} onClick={() => {setPage(2)}}>2</div>
                             <div className={style.option} onClick={() => {setPage(3)}}>3</div>
-                            <div className={style.arrows} onClick={() => {setPage(lastPage)}}><BsChevronDoubleRight/></div>
+                            <div className={style.arrows} onClick={() => {setPage(lastPage)}}><BsChevronDoubleRight size={22}/></div>
                         </div>
                 :page===2?
                 /*secund*/
@@ -38,14 +38,14 @@ const Pagination:React.FC<Props> = ({page, setPage}) => {
                             <div className={style.current}>2</div>
                             <div className={style.option} onClick={() => {setPage(3)}}>3</div>
                             <div className={style.option} onClick={() => {setPage(4)}}>4</div>
-                            <div className={style.arrows} onClick={() => {setPage(lastPage)}}><BsChevronDoubleRight/></div>
+                            <div className={style.arrows} onClick={() => {setPage(lastPage)}}><BsChevronDoubleRight size={22}/></div>
                         </div>
                 :page===lastPage?
                 /*Last page*/
                         /*Center pagination div where are pagination options*/        
                         <div className={style.paginationBox}>
                             {/*Optons*/}
-                            <div className={style.arrows} onClick={() => {setPage(1)}}><BsChevronDoubleLeft/></div>
+                            <div className={style.arrows} onClick={() => {setPage(1)}}><BsChevronDoubleLeft size={22}/></div>
                             <div className={style.option} onClick={() => {setPage(lastPage-2)}}>{lastPage-2}</div>
                             <div className={style.option} onClick={() => {setPage(lastPage-1)}}>{lastPage-1}</div>
                             <div className={style.current}>{lastPage}</div>
@@ -55,7 +55,7 @@ const Pagination:React.FC<Props> = ({page, setPage}) => {
                         /*Center pagination div where are pagination options*/        
                         <div className={style.paginationBox}>
                             {/*Optons*/}
-                            <div className={style.arrows} onClick={() => {setPage(1)}}><BsChevronDoubleLeft/></div>
+                            <div className={style.arrows} onClick={() => {setPage(1)}}><BsChevronDoubleLeft size={22}/></div>
                             <div className={style.option} onClick={() => {setPage(lastPage-3)}}>{lastPage-3}</div>
                             <div className={style.option} onClick={() => {setPage(lastPage-2)}}>{lastPage-2}</div>
                             <div className={style.current}>{lastPage-1}</div>
@@ -64,7 +64,7 @@ const Pagination:React.FC<Props> = ({page, setPage}) => {
                 /*Pages betwen from:3 to:last-2*/
                         <div className={style.paginationBox}>
                             {/*Optons*/}
-                            <div className={style.arrows} onClick={() => {setPage(1)}}><BsChevronDoubleLeft/></div>
+                            <div className={style.arrows} onClick={() => {setPage(1)}}><BsChevronDoubleLeft size={22}/></div>
 
                             <div className={style.option} onClick={() => {setPage(page-2)}}>{page-2}</div>
                             <div className={style.option} onClick={() => {setPage(page-1)}}>{page-1}</div>
@@ -74,7 +74,7 @@ const Pagination:React.FC<Props> = ({page, setPage}) => {
                             <div className={style.option} onClick={() => {setPage(page+1)}}>{page+1}</div>
                             <div className={style.option} onClick={() => {setPage(page+2)}}>{page+2}</div>
 
-                            <div className={style.arrows} onClick={() => {setPage(lastPage)}}><BsChevronDoubleRight/></div>
+                            <div className={style.arrows} onClick={() => {setPage(lastPage)}}><BsChevronDoubleRight size={22}/></div>
                         </div>
                 }
             </div>
