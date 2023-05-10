@@ -14,9 +14,13 @@ npm start
 **Make sure that you are in the correct directory when running these commands.**
 
 # File structure
-## /src
-### /axios
+All files are in /src folder
+
+## /axios
 Axios instances. If you need you can change **port of json-server** in file **axios_pokemons.ts**
 
-### /Components
+## /Components
+There are all component wih the aplikation are building
+
+#### /Components
 There are all component wih the aplikation are building
