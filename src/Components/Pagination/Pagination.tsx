@@ -16,7 +16,6 @@ const Pagination:React.FC<Props> = ({page, setPage}) => {
 
     return(
         <>
-        {console.log(lastPage)}
             {/*Div of 100vw where are center pagination*/}
             <div className={style.container}>
                 {page===1?
