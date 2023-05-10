@@ -74,3 +74,16 @@ Redux store
 
 ## module.ts
 Has global typs
+
+# What I have learned and focused on.
+### Redux-saga
+This task was good to practise redux-saga. Now i feel more confident with it
+
+### json-server
+It was my first contact with **json-server** but after this task I think it is **awesome!**
+
+### Folder structure
+I focused on the folder structure
+
+### Clear cod
+Clear cod was moust of more important things to me in this task
