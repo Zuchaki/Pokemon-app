@@ -4,6 +4,8 @@ import MainContent from './Pages/MainContent/MainContent';
 import SinglePokemonInfo from './Pages/SinglePokemonInfo/SinglePokemonInfo';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Error404 from './Pages/Error404/Error404';
+
+//Router which page to view
 const content = (
   <Routes>
     <Route path="*" element={<Error404/>}/>
@@ -13,7 +15,6 @@ const content = (
 )
 
 const App:React.FC = () => {
-
   return (
     <BrowserRouter>
       <div className="App">

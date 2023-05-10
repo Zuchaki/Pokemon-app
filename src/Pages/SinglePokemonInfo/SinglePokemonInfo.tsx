@@ -4,7 +4,6 @@ import PokemonAllInfo from "../../Components/PokemonAllInfo/PokemonAllInfo";
 
 const SinglePokemonInfo:React.FC = () => {
 
-
     return(
         <>
             <PokemonAllInfo/>

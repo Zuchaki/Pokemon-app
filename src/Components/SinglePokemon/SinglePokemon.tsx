@@ -29,7 +29,6 @@ const SinglePokemon:React.FC<Props> = ({propsSize, num, name, img, type}) => {
                         <div className={style.type} style={{backgroundColor: colors[`type-color-${e}`]}}>{e}</div>
                     ))}
                 </div>
-                
             </div>
         </>
     )

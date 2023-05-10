@@ -4,9 +4,10 @@ import SinglePokemon from "../SinglePokemon/SinglePokemon";
 import SingleData from "./SingleData/SingleData";
 import { useDispatch, useSelector } from "react-redux";
 import { Dispatch } from "redux";
-import { Action, Pokemon, State } from "../../Redux/reducers/pokemonsReducer";
+import { Action, State } from "../../Redux/reducers/pokemonsReducer";
 import { Link, useParams } from "react-router-dom";
 import {AiOutlineArrowLeft} from 'react-icons/ai'
+import { Pokemon } from "../../module";
 
 const PokemonAllInfo:React.FC = () => {
 
@@ -115,7 +116,7 @@ const PokemonAllInfo:React.FC = () => {
             <div>Loading...</div>}
 
             {/*Link back tu all pokemons*/}
-            <Link className={style.back} to={`/`}><AiOutlineArrowLeft size={36}/>Back</Link>
+            <Link className={style.back} to={`/`}><AiOutlineArrowLeft size={20}/>Back</Link>
         </>
     )
 }

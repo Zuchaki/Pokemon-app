@@ -46,12 +46,16 @@
 }
 .back{
     display: flex;
+    width: 80px;
+    padding: 4px 0;
+    margin: 30px auto;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
     text-decoration: none;
-    color: colors.$neutral-9;
-    font-size: 1.2rem;
-    font-weight: 600;
+    color: colors.$neutral-1;
+    font-size: 1rem;
+    font-weight: 400;
     font-style: italic;
+    border-radius:5px;
+    background-color: colors.$blue-7;
 }

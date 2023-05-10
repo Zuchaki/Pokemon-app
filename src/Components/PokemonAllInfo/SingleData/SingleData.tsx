@@ -19,7 +19,7 @@ const SingleData:React.FC<Props> = ({parameter, value}) => {
                 {/*Pokemon parameter value*/}
                 <div className={style.value}>
 
-                {/*If parameter is weaknes*/}
+                {/*If the parameter is "weaknes"*/}
                 {Array.isArray(value)?
                 <div className={style.types}>
                     {value.map(e=>(

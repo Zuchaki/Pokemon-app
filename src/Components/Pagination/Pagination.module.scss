@@ -1,0 +1,61 @@
+@use '../../styles/Colors/colors';
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginationBox{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+
+    .current, .option{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 20px;
+        margin: 0 6px;
+        padding: 2px 4px;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .option{
+        padding: 2px 4px;
+        background-color: colors.$blue-7;
+        color: colors.$neutral-1;
+        transition-duration: 0.2s;
+    }
+    .option:hover{
+        cursor: pointer;
+        background-color: colors.$blue-10;
+    }
+    .current{
+        background-color: colors.$neutral-7;
+        color: colors.$neutral-1;
+        padding: 6px 4px;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .arrows{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 20px;
+        margin: 0 6px;
+        padding: 4px 4px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: colors.$neutral-10;
+        transition-duration: 0.2s;
+    }
+    .arrows:hover{
+        cursor: pointer;
+        background-color: colors.$blue-10;
+        color: colors.$neutral-1;
+        border-radius: 5px;
+    }
+}
